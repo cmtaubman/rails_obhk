@@ -8,9 +8,7 @@ class CreateBars < ActiveRecord::Migration
       t.integer :endTime
       t.string  :features
       t.string  :day
-      # ARRAY ???
       t.string  :beverage
-      # ARRAY ???
       t.integer :price
       t.string  :image
       t.string  :imageTwo

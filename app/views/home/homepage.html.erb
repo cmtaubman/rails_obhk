@@ -9,11 +9,11 @@
 
     <div class="bar-home-row">
 
-      <% bars.each do |elem| %>
+      <% @bars.each do |elem| %>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
           <div class="thumbnail">
           <% elem.each do |bar| %>
-            <a href=""><img src="<%= elem.image %>" alt=""></a>
+            <a href="http://www.google.com"><img src=<%=elem.image%> alt=""></a>
             <span class="elem-name"><p><%= elem.name %></p></span>
             <span class="elem-location"><p><%= elem.location %></p></span>
             <span class="elem-deal"><p><%= elem.deal %></p></span>
