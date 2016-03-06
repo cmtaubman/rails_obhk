@@ -2,22 +2,22 @@
 
 <div class="container-fluid">
 
-  <div class="col-lg-12"><span class="bar-name"><h1><%=bar.name%></h1></span></div>
+  <div class="col-lg-12"><span class="bar-name"><h1><%=Bar.name%></h1></span></div>
 
-  <div class="col-lg-12"><span class="bar-district"><h2>- <%=bar.location%> -</h2></span></div>
+  <div class="col-lg-12"><span class="bar-district"><h2>- <%=Bar.location%> -</h2></span></div>
 
   <div class="bar-details">
     <div id="bar-description" class="col-lg-8 col-md-8 col-xs-12">
       <span><h2>Bar details:</h2></span>
-      <span><p>Deal: <%=bar.deal%></p></span>
+      <span><p>Deal: <%=Bar.deal%></p></span>
 
-      <span><p>Start Time: <span id="start-time"><%=bar.startTime%></span></p></span>
-      <span><p>End Time: <span id="end-time"><%=bar.endTime%></span></p></span>
-      <span><p>Features: <%= bar.features %></p></span>
+      <span><p>Start Time: <span id="start-time"><%=Bar.startTime%></span></p></span>
+      <span><p>End Time: <span id="end-time"><%=Bar.endTime%></span></p></span>
+      <span><p>Features: <%= Bar.features %></p></span>
     </div>
 
     <div id="bar-address" class="col-lg-4 col-md-8 col-xs-12">
-      <span><h2>Address:<br></h2><p> <%=bar.address%></p></span>
+      <span><h2>Address:<br></h2><p> <%=Bar.address%></p></span>
     </div>
 
   </div>
