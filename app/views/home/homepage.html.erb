@@ -13,12 +13,12 @@
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
           <div class="thumbnail">
           <% elem.each do |bar| %>
-            <a href="http://www.google.com"><img src=<%=elem.image%> alt=""></a>
-            <span class="elem-name"><p><%= elem.name %></p></span>
-            <span class="elem-location"><p><%= elem.location %></p></span>
-            <span class="elem-deal"><p><%= elem.deal %></p></span>
+            <a href="http://www.google.com"><img src=<%=bar.image%> alt=""></a>
+            <span class="elem-name"><p><%= bar.name %></p></span>
+            <span class="elem-location"><p><%= bar.location %></p></span>
+            <span class="elem-deal"><p><%= bar.deal %></p></span>
             <span class="elem-bookmark">
-              <button class ="elem-bookmark-btn" data-id="<%= elem._id%>">Bookmark this</button>
+              <button class ="elem-bookmark-btn" data-id=<%= bar.id%>>Bookmark this</button>
             </span>
           <% end %>
           </div>
