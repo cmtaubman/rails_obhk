@@ -10,15 +10,15 @@
     <div class="bar-home-row">
 
       <% @bars.each do |elem| %>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<!--         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"> -->
           <div class="thumbnail">
           <% elem.each do |bar| %>
-            <a href="http://www.google.com"><img src=<%=bar.image%> alt=""></a>
+            <a href="bars/id"><img src=<%=bar.image%> alt=""></a>
             <span class="elem-name"><p><%= bar.name %></p></span>
             <span class="elem-location"><p><%= bar.location %></p></span>
             <span class="elem-deal"><p><%= bar.deal %></p></span>
             <span class="elem-bookmark">
-              <button class ="elem-bookmark-btn" data-id=<%= bar.id%>>Bookmark this</button>
+              <button class ="elem-bookmark-btn" data-id=<%=bar.id%>>Bookmark this</button>
             </span>
           <% end %>
           </div>
