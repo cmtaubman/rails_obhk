@@ -5,7 +5,6 @@ $(document).ready(function () {
   var bindFilterButton = function () {
     $('#filter-button').off().on("click", function (e) {
       e.preventDefault();
-      console.log("clicked");
       var filters = {
         day: $("#select-day").val(),
         time: $("#select-time").val(),
@@ -20,15 +19,6 @@ $(document).ready(function () {
     })
   }
   bindFilterButton();
-
-  // $.auth
-  // .oAuthSignIn({provider: 'github'})
-  // .then(function(user) {
-  //   alert('Welcome ' + user.name + '!');
-  // })
-  // .fail(function(resp) {
-  //   alert('Authentication failure: ' + resp.errors.join(' '));
-  // });
 
   $('#signup-form').on('submit', function(e){
     e.preventDefault();

@@ -116,7 +116,7 @@ button.elem-bookmark-btn {
   background-color:#292c2f;
   box-shadow:0 1px 1px #ccc;
   padding: 20px 40px;
-  height: 80px;
+  height: 120px;
   color: #ffffff;
   box-sizing: border-box;
 }
@@ -246,3 +246,12 @@ body {
 input {
   color: black
 }
+
+form#signup-form {
+  padding-bottom:15px
+}
+
+form#signin-form {
+  padding-left:160px
+}
+
