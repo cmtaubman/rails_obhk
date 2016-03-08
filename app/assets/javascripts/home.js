@@ -30,29 +30,33 @@ $(document).ready(function () {
   //   alert('Authentication failure: ' + resp.errors.join(' '));
   // });
 
-  $('#signup-form').on('submit', function(){
+  $('#signup-form').on('submit', function(e){
+    e.preventDefault();
+
   $.auth.emailSignUp({
     email: $('#signup-form input[name="email"]').val(),
     password: $('#signup-form input[name="password"]').val(),
     password_confirmation: $('#signup-form input[name="password_confirmation"]').val()
   }).then(function(user){
-    alert('Welcome ' + user.email + '!');
+    console.log(user)
     window.location.href = "/bookmarks";
   }).fail(function(resp){
-    alert('Authentication failure: ' + resp.errors.join(' '));
+    console.log(resp)
   });
 });
 
-  $('#signin-form').on('submit', function(){
+  $('#signin-form').on('submit', function(e){
+    e.preventDefault();
+
   $.auth.emailSignIn({
     email: $('#signin-form input[name="email"]').val(),
     password: $('#signin-form input[name="password"]').val(),
   }).then(function(user){
-    alert('Welcome ' + user.email + '!');
+    console.log(user)
     window.location.href = "/bookmarks";
     console.log(user)
   }).fail(function(resp){
-    alert('Authentication failure: ' + resp.errors.join(' '));
+    console.log(resp)
   });
 });
 
