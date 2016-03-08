@@ -1,0 +1,9 @@
+{
+  "name": "obhkrails",
+  "version": "",
+  "main": "",
+  "private": true,
+  "dependencies": {
+    "j-toker": "^0.0.9"
+  }
+}

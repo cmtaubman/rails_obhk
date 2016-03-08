@@ -12,4 +12,9 @@ class HomeController < ApplicationController
     end
   end
 
+
+  # Filter bar: I need the home controller to show the filtered results and render the appropriate bars
+  # def js_redirect_to(path)
+  #     render js: %(window.location.href='#{/?}') and return
+  # end
 end
